@@ -5,14 +5,12 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import {
-  Avatar,
-  Button,
-  IconButton,
-  makeStyles,
-  Typography
-} from "@material-ui/core";
+import Avatar from "@material-ui/core/Avatar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 import ShareIcon from "@material-ui/icons/Share";
+import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,7 +33,7 @@ export default function CoffeCard({
 }) {
   const classes = useStyles();
   return (
-    <Card style={{}}>
+    <Card>
       <CardHeader
         style={{ alignItems: "end", height: "100px" }}
         title={title}
@@ -47,7 +45,7 @@ export default function CoffeCard({
           </IconButton>
         }
       />
-      <CardContent style={{}}>
+      <CardContent>
         <CardMedia
           style={{ height: 0, paddingTop: "56.25%" }}
           image={imageUrl}
@@ -56,8 +54,8 @@ export default function CoffeCard({
           {description}
         </Typography>
       </CardContent>
-      <CardActions style={{}}>
-        <Button color="secondary" size="small" style={{}}>
+      <CardActions>
+        <Button color="secondary" size="small">
           BUY
         </Button>
         <Button color="secondary" size="small">

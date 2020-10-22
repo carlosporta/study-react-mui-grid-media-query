@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { AppBar, Switch, Toolbar, Typography } from "@material-ui/core";
+import AppBar from "@material-ui/core/AppBar";
+import Switch from "@material-ui/core/Switch";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
 
 const Header = ({ darkMode, setDarkMode }) => {
   return (

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
-import { makeStyles, ThemeProvider, CssBaseline } from "@material-ui/core";
+import { ThemeProvider, makeStyles } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
 import Header from "./Header";
 import Content from "./Content";
-import "./styles.css";
 import createTheme from "./theme";
+import "./styles.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,7 +31,7 @@ export default function App() {
       <CssBaseline />
 
       <Grid container direction="column">
-        <Grid item xs={12} style={{}}>
+        <Grid item xs={12}>
           <Header
             darkMode={darkMode}
             setDarkMode={() => setDarkMode(!darkMode)}
