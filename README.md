@@ -2,8 +2,6 @@
 
 # Sources
 
-##
-
 [Anthony Sistilli - MUI Playlist](https://www.youtube.com/playlist?list=PLQg6GaokU5CwiVmsZ0d_9Zsg_DnIP_xwr)
 
 ## Technologies
